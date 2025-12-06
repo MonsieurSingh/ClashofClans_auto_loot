@@ -35,7 +35,6 @@ Installation
 Usage
 -----
 - Open Bluestacks and launch Clash of Clans
-- Import the keyboard mapping by clicking on the keyboard icon in the sidebar and selecting "Import layout from file". Choose the `keymap.cfg` file provided in this repository.
 - Make the Bluestacks window full screen.
 - Run the bot:
     ```
