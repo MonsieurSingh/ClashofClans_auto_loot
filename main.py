@@ -25,6 +25,10 @@ def search_attack():
     return
 
 def align_screen():
+    # zoom out first by holding the down key for 2 seconds
+    pyautogui.keyDown('down')
+    pyautogui.sleep(2)
+    pyautogui.keyUp('down')
     pyautogui.keyDown('s')
     pyautogui.sleep(1)
     pyautogui.keyUp('s')
