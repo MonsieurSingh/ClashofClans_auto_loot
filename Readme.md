@@ -25,7 +25,7 @@ Installation
 1. Clone the repository
 2. Install the required Python packages:
     ```
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
 3. Configure the bot settings in `config.py`
 4. Open Bluestacks
@@ -38,7 +38,7 @@ Usage
 - Make the Bluestacks window full screen.
 - Run the bot:
     ```
-    python bot.py
+    python3 bot.py
     ```
 - You have 5 seconds to switch to the Bluestacks window before the bot starts executing.
 - To stop the bot, press `Ctrl + C` in the terminal.
