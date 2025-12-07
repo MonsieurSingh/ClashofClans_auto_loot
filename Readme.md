@@ -1,4 +1,4 @@
-Clash of Clans auto attacker and looter bot
+Clash of Clans auto attacker, looter and wall upgrader bot
 ===============================================
 
 This is a bot for the popular mobile game Clash of Clans. It automates attacking and looting resources from other players' villages so you can max out your walls without spending hours playing the game.
