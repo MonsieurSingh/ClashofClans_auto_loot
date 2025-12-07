@@ -1,6 +1,6 @@
 # General
 START_DELAY_SECONDS = 5
-STORAGE_CHECK_LIMIT = 90
+STORAGE_CHECK_LIMIT = 20000
 
 # Search / matchmaking sequence: list of (key, sleep_after_seconds)
 SEARCH_SEQUENCE = [
@@ -14,6 +14,10 @@ ALIGN_ZOOM_KEY = 'down'
 ALIGN_ZOOM_DURATION = 2  # seconds to hold zoom key
 ALIGN_KEYS = [
     ('s', 1),
+    ('d', 1),
+]
+HOME_ALIGN_KEYS = [
+    ('w', 1),
     ('d', 1),
 ]
 
@@ -53,3 +57,19 @@ SURRENDER_SEQUENCE = [
     ('o', 2),  # confirm
     ('h', 5),  # return home
 ]
+
+# Upgrade / walls configuration
+WALL_UPGRADE_TRIES = 25
+WALL_CLICK_X_MIN_FRAC = 0.45
+WALL_CLICK_X_MAX_FRAC = 0.55
+WALL_CLICK_Y_MIN_FRAC = 0.20
+WALL_CLICK_Y_MAX_FRAC = 0.95
+WALL_CLICK_SLEEP = 0.15
+
+# keys used during wall upgrade
+WALL_UPGRADE_KEY_GOLD = 'u'
+WALL_UPGRADE_KEY_ELIXIR = 'k'
+WALL_UPGRADE_CONFIRM_KEY = 'k'
+WALL_EXIT_KEY = 'x'
+
+UPGRADE_WALLS_EVERY = 20
