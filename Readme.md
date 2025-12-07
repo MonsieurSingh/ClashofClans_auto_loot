@@ -31,10 +31,10 @@ Installation
 4. Open Bluestacks
 5. Import the keyboard mapping by clicking on the keyboard icon in the sidebar and selecting "Import layout from file". Choose the `keymap.cfg` file provided in this repository. (Make sure you've selected the coc profile, else it won't work)
 6. Open Clash of Clans and use the army configuration by clicking on the following hyperlink: [Army Configuration](https://link.clashofclans.com/en?action=CopyArmy&army=h4p1e40_9-1p2e20_3-2p3e4_5-0p0e10_8u64x26-1x91-1x87-1x75s11x10), which should look like this:
-   ![Army Configuration](army_configuration.png). Feel free to customise the army composition as long as you're able to 1-star most bases under 20 seconds after deployment.
+   ![Army Configuration](images/army.png). Feel free to customise the army composition as long as you're able to 1-star most bases under 20 seconds after deployment.
 7. Use the following base layout: [Base Layout](https://link.clashofclans.com/en?action=OpenLayout&id=TH15%3AHV%3AAAAABQAAAALyqvTgqf3LVADJ1UxoSF49)
    Or set up your own base with similar wall placements to the following image:
-   ![Base Layout](base_layout.png). Make sure the walls run diagonally and vertically across the centre of the base.
+   ![Base Layout](images/base_layout.png). Make sure the walls run diagonally and vertically across the centre of the base.
 
 Usage
 -----
