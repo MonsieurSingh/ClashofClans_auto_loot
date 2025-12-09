@@ -22,36 +22,36 @@ HOME_ALIGN_KEYS = [
 ]
 
 # Troop deployment
-TROOP_SELECT_KEY = '1'
+TROOP_SELECT_KEYS = ['1', '2', '3']
 TROOP_SELECT_SLEEP = 1
 
 DEPLOY_KEY = 'g'
 DEPLOY_COUNT = 20
 DEPLOY_INTERVAL = 0.1
 
-HERO_KEYS = ['3', '4', '5', '6']
+HERO_KEYS = ['5', '6', '7', '8']
 HERO_DEPLOY_KEY = 'q'
 HERO_DEPLOY_SLEEP = 0.25
 HERO_ABILITY_SLEEP = 0.5
 
-BATTLE_MACHINE_KEY = '2'
+BATTLE_MACHINE_KEY = '4'
 BATTLE_MACHINE_DEPLOY_SLEEP = 0.5
 
 # Spells
-SPELL_KEY = '7'
+SPELL_KEY = '9'
 SPELL_SELECT_SLEEP = 0.5
 SPELL_COUNT = 15
 # Spell placement area (fractions of screen). Example 0.25..0.75 = middle half
 SPELL_AREA = {
-    'x_min_frac': 0.25,
-    'x_max_frac': 0.75,
+    'x_min_frac': 0.44,
+    'x_max_frac': 0.52,
     'y_min_frac': 0.25,
-    'y_max_frac': 0.75,
+    'y_max_frac': 0.50,
 }
 SPELL_INTERVAL = 0.15
 
 # Surrender / end of attack sequence
-SURRENDER_WAIT = 20
+SURRENDER_WAIT = 25
 SURRENDER_SEQUENCE = [
     ('e', 2),  # open surrender
     ('o', 2),  # confirm
@@ -59,11 +59,11 @@ SURRENDER_SEQUENCE = [
 ]
 
 # Upgrade / walls configuration
-WALL_UPGRADE_TRIES = 25
-WALL_CLICK_X_MIN_FRAC = 0.45
-WALL_CLICK_X_MAX_FRAC = 0.55
+WALL_UPGRADE_TRIES = 50
+WALL_CLICK_X_MIN_FRAC = 0.44
+WALL_CLICK_X_MAX_FRAC = 0.52
 WALL_CLICK_Y_MIN_FRAC = 0.20
-WALL_CLICK_Y_MAX_FRAC = 0.95
+WALL_CLICK_Y_MAX_FRAC = 0.80
 WALL_CLICK_SLEEP = 0.15
 
 # keys used during wall upgrade
@@ -72,4 +72,4 @@ WALL_UPGRADE_KEY_ELIXIR = 'k'
 WALL_UPGRADE_CONFIRM_KEY = 'k'
 WALL_EXIT_KEY = 'x'
 
-UPGRADE_WALLS_EVERY = 20
+UPGRADE_WALLS_EVERY = 30

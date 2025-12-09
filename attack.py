@@ -21,12 +21,15 @@ def search_attack():
 
 def deploy_troops():
     # select troop
-    pyautogui.press(cfg.TROOP_SELECT_KEY)
-    pyautogui.sleep(cfg.TROOP_SELECT_SLEEP)
+    for troop_key in cfg.TROOP_SELECT_KEYS:
+        pyautogui.press(troop_key)
+        pyautogui.sleep(cfg.TROOP_SELECT_SLEEP)
+        for _ in range(cfg.DEPLOY_COUNT):
+            pyautogui.press(cfg.DEPLOY_KEY)
+            pyautogui.sleep(cfg.DEPLOY_INTERVAL)
+    # pyautogui.press(cfg.TROOP_SELECT_KEY)
+    # pyautogui.sleep(cfg.TROOP_SELECT_SLEEP)
     # deploy troops by pressing DEPLOY_KEY multiple times
-    for _ in range(cfg.DEPLOY_COUNT):
-        pyautogui.press(cfg.DEPLOY_KEY)
-        pyautogui.sleep(cfg.DEPLOY_INTERVAL)
     # select heroes and deploy abilities
     for hero_key in cfg.HERO_KEYS:
         pyautogui.press(hero_key)
