@@ -42,18 +42,19 @@ def deploy_troops():
     pyautogui.press(cfg.HERO_DEPLOY_KEY)
     pyautogui.sleep(cfg.BATTLE_MACHINE_DEPLOY_SLEEP)
     # select spell and deploy at random positions inside configured area
-    pyautogui.press(cfg.SPELL_KEY)
-    pyautogui.sleep(cfg.SPELL_SELECT_SLEEP)
-    w, h = pyautogui.size().width, pyautogui.size().height
-    x_min = int(w * cfg.SPELL_AREA['x_min_frac'])
-    x_max = int(w * cfg.SPELL_AREA['x_max_frac'])
-    y_min = int(h * cfg.SPELL_AREA['y_min_frac'])
-    y_max = int(h * cfg.SPELL_AREA['y_max_frac'])
-    for _ in range(cfg.SPELL_COUNT):
-        x = random.randint(x_min, x_max)
-        y = random.randint(y_min, y_max)
-        pyautogui.click(x, y)
-        pyautogui.sleep(cfg.SPELL_INTERVAL)
+    for spell_key in cfg.SPELL_SELECT_KEYS:
+        pyautogui.press(spell_key)
+        pyautogui.sleep(cfg.SPELL_SELECT_SLEEP)
+        w, h = pyautogui.size().width, pyautogui.size().height
+        x_min = int(w * cfg.SPELL_AREA['x_min_frac'])
+        x_max = int(w * cfg.SPELL_AREA['x_max_frac'])
+        y_min = int(h * cfg.SPELL_AREA['y_min_frac'])
+        y_max = int(h * cfg.SPELL_AREA['y_max_frac'])
+        for _ in range(cfg.SPELL_COUNT):
+            x = random.randint(x_min, x_max)
+            y = random.randint(y_min, y_max)
+            pyautogui.click(x, y)
+            pyautogui.sleep(cfg.SPELL_INTERVAL)
     # press hero abilities again
     for hero_key in cfg.HERO_KEYS:
         pyautogui.press(hero_key)

@@ -22,7 +22,7 @@ HOME_ALIGN_KEYS = [
 ]
 
 # Troop deployment
-TROOP_SELECT_KEYS = ['1', '2', '3']
+TROOP_SELECT_KEYS = ['3']
 TROOP_SELECT_SLEEP = 1
 
 DEPLOY_KEY = 'g'
@@ -38,7 +38,7 @@ BATTLE_MACHINE_KEY = '4'
 BATTLE_MACHINE_DEPLOY_SLEEP = 0.5
 
 # Spells
-SPELL_KEY = '9'
+SPELL_SELECT_KEYS = ['9']
 SPELL_SELECT_SLEEP = 0.5
 SPELL_COUNT = 15
 # Spell placement area (fractions of screen). Example 0.25..0.75 = middle half
